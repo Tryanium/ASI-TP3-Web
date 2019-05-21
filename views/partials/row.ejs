@@ -1,0 +1,9 @@
+<% data.forEach(function (article) { %>
+  <tr>
+  <td><%= article.author %></td>
+  <td><%= article.section %></td>
+  <td><%= article.status %></td>
+  <td><%= article.date.getFullYear() + "-" + article.date.getMonth() + "-" +article.date.getDate() %></td>
+  <td><%= article.title %></td>
+  </tr>
+<% }) %>

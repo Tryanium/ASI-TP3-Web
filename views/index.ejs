@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %> Articles</title>
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topBar">
+        <div class="leftSide">
+          <button type="button" name="button" onclick="Edition()" id="new">NEW</button>
+        </div>
+          <div class="RightSide">
+            <label for="search">Search : </label>
+            <input type="text" name="search" value="">
+          </div>
+      </div>
+      <div class="Middle">
+        <table>
+          <thead>
+            <tr>
+              <th>Author</th>
+              <th>Section</th>
+              <th>Status</th>
+              <th>Date</th>
+              <th>Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% include partials/row.ejs %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="javascripts/index.js" charset="utf-8"></script>

@@ -1,0 +1,104 @@
+div{
+  margin-top: 2%;
+}
+
+label{
+  font-weight: bold;
+  display: block;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;;
+}
+
+#authorDiv{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+#dateDiv{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+#titleDiv{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+#sectionDiv{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+#statusDiv{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+#textDiv{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+
+#buttonDiv{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 6;
+  text-align: end;
+  margin-top: 5%;
+  width: 94%;
+}
+
+.input, select{
+  width: 80%;
+  height: 2em;
+  margin-top: 1%;
+  border: 2px solid black;
+}
+
+#statusDiv label{
+  display: inline-block;
+  font-weight: normal;
+}
+
+#statusDiv div {
+  margin-top: 0%;
+}
+
+#statusName{
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+textarea{
+  width: 93%;
+  height: 17em;
+  margin-top: 1%;
+  resize: none;
+  border: 1px solid black;
+}
+
+#save{
+  width: 14vw;
+  height: 4em;
+  border: 1px solid black;
+  background: lightgray;
+}

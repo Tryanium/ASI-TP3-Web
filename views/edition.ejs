@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %> Articles</title>
+  <link rel='stylesheet' href='/stylesheets/edition.css' />
+</head>
+
+<body>
+  <form class="grid" action="/edition/save" method="post">
+    <div class="" id="authorDiv">
+      <label for="author">Author</label>
+      <input type="text" name="author" value="" id="author" class="input" required>
+    </div>
+
+    <div id="dateDiv">
+      <label for="date">Date</label>
+      <input type="date" name="date" value="" id="date" class="input" required>
+    </div>
+
+    <div id="titleDiv">
+      <label for="title">Title</label>
+      <input type="text" name="title" value="" id="title" class="input" style="width: 93%;" required>
+    </div>
+
+    <div id="sectionDiv">
+      <label for="section">Section</label>
+      <select class="" name="section" id="section" required>
+        <option value="cinema">Cinemas</option>
+        <option value="politic">Politics</option>
+        <option value="theatre">Theatre</option>
+        <option value="people">People</option>
+      </select>
+    </div>
+
+    <div id="statusDiv">
+      <div class="" id="statusName">Status</div>
+      <div class="">
+        <input type="radio" name="status" value="edition" class="status" checked>
+        <label for="Inedition">In edition</label>
+        <input type="radio" name="status" value="submitted" class="status">
+        <label for="submitted">Submitted</label>
+        <input type="radio" name="status" value="accepted" class="status">
+        <label for="Accepted">Accepted</label>
+        <input type="radio" name="status" value="published" class="status">
+        <label for="Published">Published</label>
+      </div>
+    </div>
+
+    <div id="textDiv">
+      <label for="text">Text</label>
+      <textarea name="text" id="text" required></textarea>
+    </div>
+    <div id="buttonDiv">
+      <button type="submit" name="button" id="save">SAVE</button>
+    </div>
+  </form>
+</body>
+
+</html>
